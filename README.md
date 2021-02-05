@@ -21,8 +21,14 @@ cd postgresdb-docker-compose
 docker-compose up
 ```
 3. Opne PG-Admin console \
-open http://localhost/ in browser and use login/pass from .env.pg_admin file
-
+* open http://localhost/ in browser and use login/pass from .env.pg_admin file
+* create new connection
+    ```
+    hostname = postgres_db
+    port = 5432
+    username = postgres
+    password = <password from .env.pg>
+    ```
 ## Clean up
 > docker-compose down --volumes
 
